@@ -87,3 +87,10 @@ body{
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+.slideShow{
+max-width: 500px;
+animation: fadeIn 2s infinite alternate;
+}
