@@ -1,15 +1,120 @@
-.raison{
-  float: left;
-  font-family: fantasy;
-  font-size: 20px;
+*{
+  margin: 0;
+  padding: 0;
 }
-.raison >ul > li{
+body{
+  background-image: url(Img/sunset.jpg);
+}
+h3{
+  color: black;
+  font-family: cursive;
+}
+#trouver {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+#slider .reserver {
+    height: 80%;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+  }
+#slider .reserver .reserver1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.reserver2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+  }
+u{
+  color:white;
+}
+
+}
+li{
+  list-style: none;
+}
+.formulaire{
+  padding-left: 20px;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+}
+.raison{
+
+  font-size: 20px;
+  font-family: cursive;
+}
+.raison ul  li{
   list-style: none;
 }
 .villes{
-  font-family: fantasy;
-  font-size: 20px
+  font-size: 20px;
+font-family: cursive;
 }
-.villes > ul>li{
+.villes  ul li{
   list-style: none;
+}
+.Activite{
+  font-family: cursive;
+  font-size: 20px;
+}
+.Activite ul li{
+  list-style: none;
+}
+.Saison{
+  font-size: 20px;
+font-family: cursive;
+}
+.Saison ul li {
+  list-style: none;
+}
+.Paysage{
+  font-size: 20px;
+font-family: cursive;
+}
+.paysage ul li {
+  list-style: none;
+}
+.Hotel{
+  font-size: 20px;
+font-family: cursive;
+}
+.Hotel ul li {
+  list-style: none;
+}
+.valide{
+  padding-top: 100px;
+}
+button{
+  padding: 100px 100px 100px 100px;
+  border-radius: 10px;
+  border: transparent;
+  position: relative;
+  background:  transparent ;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  font-size: 30px;
+}
+button:hover{
+  background-color: rgba(0,0,0,0.5);
+  color: blue;
+}
+#chargement{
+  width: 100%;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#bar{
+  width: 1%;
+  height: 30px;
+  background-color: purple;
 }
