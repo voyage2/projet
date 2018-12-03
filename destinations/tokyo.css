@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slide {
+  0% {
+    left: -210px
+  }
+  100% {
+    left: 5px
+  }
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 100
+  }
+}
+
+header{
+  z-index:1;
+  position:fixed;
+  width: 100%;
+  font-family: Times;
+  font-style: oblique;
+}
+
+.top{
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  list-style: none;
+  padding: 10px 0 10px 0;
+  letter-spacing: 1px
+}
+.top > li {
+  display: inline-block;
+  padding: 0 20px 0 20px ;
+  font-size: 14px;
+}
+.top > li > a{
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.top > li > a:hover{
+  border-color: white;
+  }
+
+.top .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
+body{
+  max-width: 100%;
+}
+.boitelogo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 11%;
+}
+  .logo{
+    width:100%;
+    height: 100%;
+  }
+
+#blocdestination {
+  width: 100%;
+  text-align: center;
+}
+  #blocdestination h1 {
+    /* position: absolute; */
+    font-family: 'Cookie', cursive;
+    font-size: 90px;
+
+  }
+
+  #blocdestination bloc {
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    /* text-align: center; */
+  }
+
+.presentp{
+  background-image: url(Img/tokyo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  }
+
+.image1paris{
+  height: 100vh;
+  width: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-attachment: fixed; */
+}
+
+.parisparis{
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 90px;
+  padding: 50px;
+  color: white;
+  border: 5px white solid;
+  padding: 50px;
+  opacity: 0;
+  animation: fondu;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;}
+
+
+#wsh{
+  text-align: center;
+  margin-top: 40px;}
+
+#wsh h2{
+  margin-top: 6%;
+  font-family: 'Cookie', cursive;
+  font-size: 90px;
+}
+
+#activités_paris{
+  background-color: white;
+}
+
+.champsely{
+  margin-top: 5%;
+}
+
+.toure h3{
+  color: white;
+  border-bottom; solid white;
+
+}
+
+.eiffel{
+  transition: transform .2s;
+}
+.toure{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+ rgba(0, 0, 0, 0.45),
+ rgba(0, 0, 0, 0.45)),url(Img/op.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+.eiffel:hover{
+  transform: scale(1.15);
+}
+.overlay{
+  /* position: absolute; */
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 30%;
+  opacity:0.7;
+  transition: .3s ease;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.eiffel:hover .overlay {
+  opacity: 0;
+}
+
+.louvres{
+  transition: transform .2s;
+}
+.louvres:hover{
+  transform: scale(1.15);
+}
+.louvres:hover .overlay {
+  opacity: 0;
+}
+.pyramide{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(
+ rgba(0, 0, 0, 0.45),
+ rgba(0, 0, 0, 0.45)),url(Img/fuji.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+
+.champsely{
+  transition: transform .2s;
+}
+.avenue{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.45),
+  rgba(0, 0, 0, 0.45)),url(Img/senso.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+.overlay p{
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
+}
+.champsely:hover{
+  transform: scale(1.15);
+}
+.champsely:hover .overlay {
+  opacity: 0;
+}
+
+.sacrecoeur{
+  transition: transform .2s;
+}
+.test{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(
+ rgba(0, 0, 0, 0.45),
+ rgba(0, 0, 0, 0.45)),url(Img/shop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+.sacrecoeur:hover{
+  transform: scale(1.15);
+}
+.sacrecoeur:hover .overlay {
+  opacity: 0;
+}
+
+.hotel h2{
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 90px;
+}
+
+#reservation1 {
+  display: flex;
+  justify-content: space-around;
+  height: 35rem;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#moncercle1{
+  background-size: cover;
+  border-radius:50%;
+  width:350px;
+  height:350px;
+}
+#moncercle1 .image1{ /* ICI j'ai rajouté ça pour faire du CSS sur l'image vu que mtn l'iamge est dans le html*/
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#moncercle2{
+  background-size: cover;
+  border-radius:50%;
+  width:350px;
+  height:350px;
+}
+#moncercle2 .image2{ /* ICI j'ai rajouté ça pour faire du CSS sur l'image vu que mtn l'iamge est dans le html*/
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#moncercle3{
+  background-size: cover;
+  border-radius:50%;
+  width:350px;
+  height:350px;
+}
+#moncercle3 .image3{ /* ICI j'ai rajouté ça pour faire du CSS sur l'image vu que mtn l'iamge est dans le html*/
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.container{ /* ICI j'ai dis au container (qui contient l'image, l'overlay et le text) d'heriter sa taille par rapport à #moncercle1 */
+  width: inherit;
+  height: inherit;
+  position: relative;
+  border-radius: 50%;
+}
+.overlay3{
+  position:absolute;
+  opacity:0; /* ICI je dis que cet overlay est transparent */
+  transition: 0.5s ease; /* ICI je dis que la transition qui va s'effectuer sur cette div (donc le container) va durer 0,5s (j'aurais pu le mettre dans ":hover", ca fait la meme chose )*/
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  width:100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(7, 56, 70, 0.5);
+}
+.lien_text{
+  top:50%; /* Bon la j'ai essayé de placer le textes comme il faut mais j'y arrive pas chpa pk */
+  left: 25%;
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+.container:hover .overlay3{
+  opacity:1; /* Passe la souris sur container -> opacité aumgente*/
+}
+
+
+#bouton{
+  display:flex;
+  justify-content:center;
+  margin-top: 5%;
+  margin-bottom:5%;
+}
+button{
+  border-radius: 2px;
+  font-family: 'Cookie', cursive;
+  padding: 100px;
+  border-radius: 10px;
+  color: black;
+  background-color:pink;
+  font-size: 30px;
+}
+button:hover{
+  color:pink;
+  background-color: black;
+  border: 2px pink solid;
+}
+footer{
+  /* display: inline-block; */
+  background-color: black;
+  background-size:cover;
+  color:white;
+
+}
+footer #foot{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .reseaux{
+  margin-right: 10%;
+  font-size:31px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 0 20px ;
+}
+
+footer #foot ul{
+  list-style: none;
+}
+footer #foot .divgauche2{
+  width: 15%;
+}
+footer #foot .divgauche2 h4{
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+footer #foot .divgauche2 ul{
+  margin-top: 20px;
+}
+footer #foot .divgauche2 ul li{
+  margin: 8px 0px;
+}
+footer #foot .divgauche2 ul li a{
+  color: white;
+}
+footer #foot .divgauche2{
+  margin-top: 10rem;
+}
+footer #foot .divgauche2 .email{
+  margin-top: 15px;
+}
+.email input[type="email"]{
+  border:none;
+  padding: 5px;
+  outline: none;
+  background-color: white;
+  color:black;
+  height: 30px;
+  width: 100%;
+}
+.email input[type="submit"]{
+  border:none;
+  outline:none;
+  margin-top: 10px;
+  background-color:white;
+  border:1px white solid;
+  color:black;
+  height: 25px;
+  width: 50%;
+}
+footer .footer2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 130px;
+  /* border-top: 1px black solid; */
+  /* width :90%; */
+}

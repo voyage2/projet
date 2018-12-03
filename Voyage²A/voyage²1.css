@@ -1,0 +1,510 @@
+
+.boitelogo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 11%;
+}
+  .logo{
+    width:100%;
+    height: 100%;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slide {
+  0% {
+    left: -210px
+  }
+  100% {
+    left: 5px
+  }
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 100
+  }
+}
+header{
+  z-index:1;
+  position:fixed;
+  width: 100%;
+  font-family: Times;
+  font-style: oblique;
+}
+
+.imageslide{
+  height: 100vh;
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+
+.top{
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  list-style: none;
+  padding: 10px 0 10px 0;
+  letter-spacing: 1px
+}
+.top > li {
+  display: inline-block;
+  padding: 0 20px 0 20px ;
+  font-size: 14px;
+}
+.top > li > a{
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.top > li > a:hover{
+  border-color: white;
+
+}
+body{
+  margin: 0;
+
+}
+.image1paris{
+  height: 100vh;
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.imageslide:hover .slide{
+  opacity: 0.3;
+}
+.imageslide:hover .innerSlide{
+  opacity: 1;
+}
+.textSlide{
+
+ color: black;
+ font-size: 16px;
+padding-top: 250px;
+}
+
+img.slide{
+  width: 100%;
+  height: 500px;
+  margin-top: -550px;
+  margin-bottom: 0;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.slideShow{
+width: 100%;
+animation: fadeIn 2s infinite alternate;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+.innerSlide{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.menu{
+
+  font-family: cursive;
+  text-align: center;
+  color: #fff;
+  list-style: none;
+  padding: 0 0 0 0;
+}
+.menu > li {
+  display: inline-block;
+  padding: 0 50px 0 50px ;
+  font-size: 20px;
+}
+.menu > li > a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu > li > a:hover{
+  border-color: black;
+}
+#slogan{
+  margin-top: -300px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 32px;
+}
+.dropbtn {
+    background-color: black;
+    color:whitesmoke ;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn #Recherche :hover, .dropbtn:focus {
+    border-bottom:2px solid transparent;
+  border-bottom-color: white;
+  border-radius:5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content input {
+    color: black;
+    font-family:cursive;
+    font-size:12px;
+    text-decoration: none;
+}
+.dropdown-content #ar{
+ display:block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content input:hover {background-color: red}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+
+#Recherche{
+  list-style: none;
+  color: white;
+
+}
+.show {
+  display:inline-block;
+}
+.Mosaique{
+  display: -ms-flexbox; /* IE 10 */
+   display: flex;
+   -ms-flex-wrap: wrap; /* IE 10 */
+   flex-wrap: wrap;
+   padding: 0 4px;
+   box-sizing: border-box;
+   width: 100%;
+}
+.colonne1{
+  -ms-flex: 50%; /* IE 10 */
+   flex: 50%;
+   padding-top: 0px;
+   padding-right: 0.333em;
+   padding-bottom: 0px;
+   padding-left: 200px;
+
+}
+
+.gr .Greece{
+display: inline-block;
+  width: 684.64;
+    height:400px;
+  vertical-align:middle;
+  transition: .5s ease;
+backface-visibility: hidden;
+}
+.gr:hover .Greece {
+    opacity: 0.3;
+}
+.gr:hover .innergr{
+  opacity:1;
+}
+.innergr{
+  transition: .5s ease;
+  opacity:0;
+  top: 2300px;
+  position: absolute;
+  left: 570px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jap .Japon{
+  display: inline-flex;
+  width: 343.14px;
+  height: 400px;
+  margin-top: -400px;
+  margin-left: 686px;
+margin-right: -0.333em;
+margin-bottom: -0.667em;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+.jap:hover .Japon {
+    opacity: 0.3;
+}
+.jap:hover .innerjp{
+  opacity:1;
+}
+.innerjp{
+  transition: .5s ease;
+  opacity:0;
+  top: 2300px;
+  position: absolute;
+  left: 1070px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.colonne{
+  -ms-flex: 50%; /* IE 10 */
+   flex: 50%;
+   padding-top: 0px;
+   padding-right: 0.333em;
+   padding-bottom: 0px;
+   padding-left: 200px;
+
+}
+.imp .Paris{
+  margin-top: 8px;
+  width: 684.64;
+    height:400px;
+    padding-bottom: 0;
+  vertical-align:middle;
+  transition: .5s ease;
+backface-visibility: hidden;
+}
+.imp:hover .Paris{
+    opacity: 0.3;
+}
+.imp:hover .innerPa{
+  opacity:1;
+}
+.innerPa{
+  transition: .5s ease;
+  opacity: 0;
+  top: 1550px;
+  position: absolute;
+  left: 600px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textepa{
+  color: blue;
+  background-color: black;
+}
+.haw .Hawaii{
+display: inline-block;
+  width: 684.64;
+    height:330px;
+    padding-bottom: 0;
+  vertical-align:middle;
+  transition: .5s ease;
+backface-visibility: hidden;
+}
+.haw:hover .Hawaii{
+    opacity: 0.3;
+}
+.haw:hover .innerHa {
+  opacity:1;
+}
+.innerHa{
+  transition: .5s ease;
+  opacity: 0;
+  top: 1900px;
+  position: absolute;
+  left: 570px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.texteha{
+  color: green;
+  background-color: purple;
+}
+.loa .Losangeles{
+  display: inline-flex;
+  width: 343.14px;
+  height: 730px;
+  margin-top: -730px;
+  margin-left: 687px;
+margin-right: -0.333em;
+margin-bottom: -0.667em;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+.loa:hover .Losangeles {
+    opacity: 0.3;
+}
+.loa:hover .innerLA{
+  opacity:1;
+}
+.innerLA{
+  transition: .5s ease;
+  opacity: 0;
+  top: 1750px;
+  position: absolute;
+  left: 1060px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.texteLA{
+  color: yellow;
+  background-color: pink;
+}
+
+.rm .Rome{
+  display: block;
+  margin-top: 8px;
+    width: 1029.97px;
+    height: 500px;
+    transition: .5s ease;
+  backface-visibility: hidden;
+}
+.rm:hover .Rome {
+    opacity: 0.3;
+}
+.rm:hover .innerrm{
+  opacity:1;
+}
+.innerrm{
+  position: absolute;
+  top:2700px;
+  left: 730px;
+  transition: .5s ease;
+  opacity: 0;
+transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textrm{
+  color: navy;
+}
+
+.extsansf .SanFranscisco{
+  display: block;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 1029.97px;
+    height: 500px;
+    transition: .5s ease;
+  backface-visibility: hidden;
+}
+.extsansf:hover .SanFranscisco {
+  opacity: 0.3;
+}
+
+.extsansf:hover .innerSlideSF {
+  opacity: 1;
+}
+.innerSlideSF{
+  transition: .5s ease;
+  opacity: 0;
+  top: 1100px;
+  position: absolute;
+  left: 700px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.TexteSanf{
+  background-color: black;
+ color: red;
+ text-align: center;
+}
+
+footer{
+  /* display: inline-block; */
+background-color: black;
+  background-size:cover;
+}
+footer #foot{
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer #foot .divgauche2{
+  width: 15%;
+}
+footer #foot .divgauche2 h4{
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+footer #foot .divgauche2 ul{
+  margin-top: 20px;
+}
+footer #foot .divgauche2 ul li{
+  margin: 8px 0px;
+}
+footer #foot .divgauche2 ul li a{
+  color: white;
+}
+footer #foot .divgauche2{
+  margin-top: 10rem;
+}
+footer #foot .divgauche2 .email{
+  margin-top: 15px;
+}
+#reduc{
+  color:white;
+}
+.email input[type="email"]{
+  border:none;
+  padding: 5px;
+  outline: none;
+  background-color: white;
+  color:white;
+  height: 30px;
+  width: 100%;
+}
+.email input[type="submit"]{
+  border:none;
+  outline:none;
+  margin-top: 10px;
+  background-color:white;
+  border:1px rgba(7, 56, 70, 0.7) solid;
+  color:black;
+  height: 25px;
+  width: 50%;
+}
+footer .footer2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 130px;
+  /* border-top: 1px black solid; */
+  /* width :90%; */
+}
